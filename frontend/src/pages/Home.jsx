@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/foods/")
+      .get("https://fooddeliveryapplicationnew.onrender.com/api/foods/")
       .then((res) => setFoodList(res.data))
       .catch((err) => console.error(err));
   }, []);
