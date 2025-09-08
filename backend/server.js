@@ -14,7 +14,7 @@ app.use(express.json())  //Data Sharing through Json
 
 
 //Backend and Database:
-mongoose.connect('mongodb://localhost:27017/foodieapp')
+mongoose.connect(process.env.MONGO_URI)
 
 .then(()=>console.log('MongoDB Connected'))
 .catch(err=> console.error(err))
